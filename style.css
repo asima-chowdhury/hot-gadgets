@@ -1,50 +1,60 @@
-/* ---------------------Commmon code start------------------ */
-.container{
+/* --------------------- Resuable code start------------------ */
+.mb-100{
     margin-bottom: 100px;
+}
+p{
+    color: gray;
 }
 .buy-now-button{
     color: white;
     background-color: black;
     padding: 10px 30px;
-    border: none;
+    border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
 }
 .buy-now-button:hover{
+    border: 1px solid black;
     color:black;
-    background-color: orange;
+    background-color: white;
 }
 .card{
-    box-shadow: 5px 5px 15px #cccccc;
+    box-shadow: 5px 5px 15px #c0c0c0;
     border: none;
     border-radius: 15px;
 }
 .card img{
     width: 200px;
-    /* margin: 0 auto; bootstrap= mx-auto */
 }
 .card-footer {
     background-color: white;
     border-top: none;
 }
-/* ---------------------Commmon code end------------------ */
-/* ---------------------Navigation-area start------------------ */
+/* --------------------- Resuable code end ------------------ */
+/* --------------------- Navigation-area start ------------------ */
 .nav-text{    
     font-weight: 500;
     font-size: 22px;
+}
+.bg-light {
+    background-color: white !important;
 }
 /* ---------------------Navigation-area end------------------ */
 
 /* ---------------------Carousel-area start------------------ */
 .carousel-indicators li {
-    width: 50px;
+    border:none;
+    width: 15px;
     height: 10px;
-    background-color: #ffbd23;
-    border-radius: 13px;
+    border-radius: 15px;
+    background-color: gray;
+}
+.carousel-indicators .active{
+    width: 30px;
+    background-image: linear-gradient(to right, #FFC51E 0%, #FF9C35 100%);
 }
 .carousel-item p{
-    color: gray;
     padding: 30px 0;
 }
 /* ---------------------Carousel-area end------------------ */
@@ -63,11 +73,22 @@
     left: 46%;
     border-radius: 20px;
 }
-.categorie-box{
+.cat-box-1, .cat-box-2 ,.cat-box-3 {
     width: 200px;
     height: 220px;
     box-shadow: 5px 5px 15px gray;
+    transition: .5s;
+}
+.cat-box-1:hover, .cat-box-2:hover, .cat-box-3:hover {
+    transform: translateY(-10px);
+    transition: .5s ease-in-out;
+}
+.cat-box-1{
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
+}
+.cat-box-2 ,.cat-box-3 {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 /* -------------------- Categories-area end ------------- */
