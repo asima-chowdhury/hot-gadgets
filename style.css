@@ -1,13 +1,42 @@
+/* ---------------------Commmon code start------------------ */
 .container{
     margin-bottom: 100px;
 }
+.buy-now-button{
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.buy-now-button:hover{
+    color:black;
+    background-color: orange;
+}
+.card{
+    box-shadow: 5px 5px 15px #cccccc;
+    border: none;
+    border-radius: 15px;
+}
+.card img{
+    width: 200px;
+    /* margin: 0 auto; bootstrap= mx-auto */
+}
+.card-footer {
+    background-color: white;
+    border-top: none;
+}
+/* ---------------------Commmon code end------------------ */
+/* ---------------------Navigation-area start------------------ */
 .nav-text{    
     font-weight: 500;
     font-size: 22px;
-    margin: 0 15px;
 }
+/* ---------------------Navigation-area end------------------ */
 
-
+/* ---------------------Carousel-area start------------------ */
 .carousel-indicators li {
     width: 50px;
     height: 10px;
@@ -18,40 +47,27 @@
     color: gray;
     padding: 30px 0;
 }
-.buy-now-button{
-    color: white;
-    background-color: black;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 5px;
+/* ---------------------Carousel-area end------------------ */
+/* -------------------- Categories-area start ------------- */
+.categories h3{
+    position: relative;
+    margin-bottom: 100px;
 }
-.cat-heading{
-    margin-bottom: 20px;
+.categories h3::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background-image: linear-gradient(to right, #FFC51E 0%, #FF9C35 100%);
+    bottom: -35%;
+    left: 46%;
+    border-radius: 20px;
 }
-.orange-highlight{
-    color: #ffa431;
+.categorie-box{
+    width: 200px;
+    height: 220px;
+    box-shadow: 5px 5px 15px gray;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
-.text-center{
-    text-align: center;
-}
-.card-footer {
-    background-color: white;
-    border-top: none;
-}
-.card-footer h5{
-    margin-bottom: 20px;
-}
-.card{
-    padding: 30px 0px;
-    box-shadow: 5px 5px 15px #cccccc;
-    border: none;
-    border-radius: 15px;
-}
-.card img{
-    width: 300px;
-    margin: 0 auto;
-}
-.orange-border{
-    border-bottom: 3px solid orange;
-    border-radius: 5px;
-}
+/* -------------------- Categories-area end ------------- */
